@@ -1,0 +1,234 @@
+<!-- 
+    https://speckyboy.com/character-designs-html-css/
+https://a11y.gitbook.io/graphics-aria/svg-graphics/svg-paths-shape
+-->
+
+
+<style>
+    :root {
+        --color1: #060201;
+        --color2: #fdfbfb;
+        --color3: #ffef58;
+        --color4: #f41d84;
+        --color5: #6f6365;
+        --color6: #fcfcfc;
+        --color7: #ffe0e4;
+
+    }
+
+    /*
+        head #060201
+        face #fdfbfb
+        mouse, headset, foot #ffef58
+        headset mark #f41d84
+        body skin #6f6365
+        body stomach #fcfcfc
+    */
+    div {
+        width: 100px;
+        height: 100px
+    }
+
+    .color1 {
+        background-color: var(--color1);
+    }
+
+    .color2 {
+        background-color: var(--color2);
+    }
+
+    .color3 {
+        background-color: var(--color3);
+    }
+
+    .color4 {
+        background-color: var(--color4);
+    }
+
+    .color5 {
+        background-color: var(--color5);
+    }
+
+    .color6 {
+        background-color: var(--color6);
+    }
+
+    .container {
+        position: fixed;
+        top: 0px;
+        left: calc(50% - 400px);
+    }
+
+    main {
+        position: relative;
+        width: 800px;
+        height: 1200px;
+        border: 1px solid black;
+    }
+
+    .headset{
+        position: absolute;
+        background-color:var(--color3);
+        border-radius: 50% 50% 50% 50%/55% 60% 40% 45%;
+        left: 135px; 
+        top: 80px;
+        width: 620px;
+        height: 450px;
+    }
+
+    .headset .item{
+        position:absolute;
+        width: 70px;
+        height: 100px;
+        background-color:var(--color3);
+        border-radius:100%;
+        top:200px;
+    }
+    .headset .item.left{
+       left: -20px;
+    }
+    .headset .item.right{
+        left: 570px;
+    }
+    
+    .headset .item .sub{
+        width: 20px;
+        height: 50px;
+        background-color:var(--color4);
+        margin-top:20px;
+    }
+
+    .headset .item.left .sub{
+        border-top-left-radius:100%;
+        border-bottom-left-radius:100%;
+    }
+    .headset .item.right .sub{
+        margin-left: 50px;
+        border-top-right-radius:100%;
+        border-bottom-right-radius:100%;
+    }
+
+    .body.top{
+        position: relative;
+        background-color:var(--color1);
+        border-radius: 50% 50% 50% 50%/55% 60% 40% 45%;
+        left: 150px; 
+        top: 100px;
+        width: 600px;
+        height: 500px;
+        z-index: 5;
+    }
+
+    .face {
+        position:absolute;
+        background-color: var(--color2);
+        border: 1px solid var(--color1);
+        border-radius: 50% 50% 50% 50%/55% 60% 40% 45%;
+        left: 50px; 
+        top: 50px;
+        width: 500px;
+        height: 400px;
+        z-index: 10;
+    }
+
+    .eyes {
+        position: absolute;
+        border: 1px solid #d0d0d0;
+        border-radius: 100%;
+    }
+
+    .eyes.first{
+        top: 100px;
+        left: 80px;
+    }
+    .eyes.second{
+        top: 100px;
+        left: 320px;
+    }
+
+    .eyes .circle{
+        background-color: var(--color1);
+        width: 30px;
+        height: 30px;
+        margin: 35px 35px;
+        border-radius: 100%;
+    }
+
+    .dimple{
+        position:absolute;
+        top: 210px;
+        left: 20px;
+        width: 460px;
+    }
+
+    .dimple .left{
+        display: block;
+        float: left;
+        width: 80px;
+        height: 80px;
+        background-color: var(--color7);
+        border-radius:100%;
+    }
+    .dimple .right{
+        display: block;
+        float: right;
+        width: 80px;
+        height: 80px;
+        background-color: var(--color7);
+        border-radius:100%;
+    }
+
+    .mouse{
+        position: absolute;
+        width :250px;
+        top: 170px;
+        left: 130px;
+    }
+</style>
+
+<div class="color1"></div>
+<div class="color2"></div>
+<div class="color3"></div>
+<div class="color4"></div>
+<div class="color5"></div>
+<div class="color6"></div>
+<div class="container">
+    <main>
+        <div class="headset">
+            <div class="item left">
+                <div class="sub">
+
+                </div>
+            </div>
+            <div class="item right">
+                <div class="sub">
+
+                </div>
+            </div>
+        </div>
+        <div class="body top">
+            
+            <div class="face">
+                <div class="eyes first">
+                    <div class="circle">
+    
+                    </div>
+                </div>
+                <div class="eyes second">
+                    <div class="circle">
+    
+                    </div>
+                </div>
+                <div class="dimple">
+                    <div class="left">
+
+                    </div>
+                    <div class="right">
+
+                    </div>
+                </div>
+                <img class="mouse" src="pengsu mouse.png">
+            </div>
+        </div>
+    </main>
+</div>
